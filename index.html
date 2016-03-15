@@ -10,21 +10,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/3.0.2/tachyons.min.css">
     <style>
-    .logo {
-        border-right: 2px solid white;
-        padding-right: 6px;
-        -webkit-animation: 1s blink step-end infinite;
-        -moz-animation: 1s blink step-end infinite;
-    }
-    @-webkit-keyframes blink {
-        from, to { border-color: transparent }
-        50% { border-color: white }
-    }
+      .logo {
+          border-right: 2px solid;
+          padding-right: 5px;
+          animation: 2s blink linear infinite;
+          -webkit-animation: 2s blink linear infinite;
+          -moz-animation: 2s blink linear infinite;
+          -o-animation: 2s blink linear infinite;
+      }
 
-    @-moz-keyframes blink {
-        from, to { border-color: transparent }
-        50% { border-color: white }
-    }
+      @-webkit-keyframes blink {
+        0%   { border-color: #fff }
+        47%  { border-color: #eee }
+        50%  { border-color: transparent }
+        97%  { border-color: transparent }
+        100% { border-color: #eee }
+      }
+
+      @-moz-keyframes blink {
+        0%   { border-color: #fff }
+        47%  { border-color: #eee }
+        50%  { border-color: transparent }
+        97%  { border-color: transparent }
+        100% { border-color: #eee }
+      }
+
+      @-ms-keyframes blink {
+        0%   { border-color: #fff }
+        47%  { border-color: #eee }
+        50%  { border-color: transparent }
+        97%  { border-color: transparent }
+        100% { border-color: #eee }
+      }
+
+      @-o-keyframes blink {
+        0%   { border-color: #fff }
+        47%  { border-color: #eee }
+        50%  { border-color: transparent }
+        97%  { border-color: transparent }
+        100% { border-color: #eee }
+      }
     </style>
 </head>
 
